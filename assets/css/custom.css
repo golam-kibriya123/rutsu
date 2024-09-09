@@ -1,0 +1,79 @@
+:root {
+    --color-white: #FEFDFB;
+    --color-olive: #8B9B7F;
+    --color-brown: #DCD1BF;
+    --color-dark: #33302E;
+}
+
+/* nav  */
+nav {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+nav .navbar-brand img {
+    width: 140px;
+}
+
+nav .navbar-collapse {
+    flex-grow: 0;
+}
+
+nav .nav-link,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+    color: var(--color-white);
+}
+
+nav .nav-link {
+    position: relative;
+    transition: all .4s;
+    font-size: 20px;
+    display: inline-block;
+}
+
+nav .nav-link::after,
+nav .navbar-nav .nav-link.active::after,
+nav .navbar-nav .nav-link.show::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background: var(--color-white);
+    width: 0%;
+    transition: all .4s;
+    transform: translateX(-50%);
+}
+
+
+nav .nav-link:hover,
+nav .navbar-nav .nav-link:focus {
+    color: var(--color-white);
+
+}
+
+nav .nav-link:hover::after,
+nav .navbar-nav .nav-link.active:hover::after,
+nav .navbar-nav .nav-link.nav-link:focus::after {
+    width: 90%;
+}
+
+.navbar-toggler {
+    background: var(--color-white); 
+}
+
+.navbar-toggler {
+    background: var(--color-white);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}
