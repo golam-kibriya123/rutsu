@@ -220,6 +220,7 @@ nav .navbar-nav .nav-link.nav-link:focus::after {
     height: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -237,7 +238,6 @@ nav .navbar-nav .nav-link.nav-link:focus::after {
     font-style: italic;
     font-weight: 400;
     line-height: 32px;
-    text-align: center;
     padding-bottom: 24px;
     padding-top: 10px;
     height: 65%;
@@ -325,7 +325,7 @@ nav .navbar-nav .nav-link.nav-link:focus::after {
 }
 
 .community-section .community-members .row .img {
-    overflow: hidden; background: #000;
+    overflow: hidden;
 }
 
 .community-section .community-members .row .img img {
@@ -335,7 +335,7 @@ nav .navbar-nav .nav-link.nav-link:focus::after {
 
 .community-section .community-members .row .img img:hover {
     transform: scale(1.15);
-    rotate: 2deg;
+    rotate: 3deg;
 }
 
 
@@ -584,12 +584,29 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+    nav .navbar-brand img {
+        width: 82px;
+    }
+
     .section-title {
         font-size: 38px !important;
     }
 
     .header-title-section a {
         padding: 15px 56px;
+    }
+
+    .footer-top p,
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-top h3 {
+        font-size: 17px;
+    }
+
+    .footer-top li {
+        font-size: 14px;
     }
 
 
